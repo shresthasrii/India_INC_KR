@@ -43,9 +43,11 @@ if not exist ".env" (
     if exist ".env.example" (
         copy /Y ".env.example" ".env" >nul
         echo AUTH_DISABLED=true>>".env"
+        echo AGENT_NATIVE_DISABLE_AUTO_DEV_ACCOUNT=1>>".env"
     ) else (
         echo PING_MESSAGE=pong>".env"
         echo AUTH_DISABLED=true>>".env"
+        echo AGENT_NATIVE_DISABLE_AUTO_DEV_ACCOUNT=1>>".env"
     )
 )
 
