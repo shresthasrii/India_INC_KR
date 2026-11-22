@@ -79,8 +79,12 @@ export default function Root() {
   const [queryClient] = useState(() => createAgentNativeQueryClient());
   return (
     <AppToolkitProvider>
-      <AppProviders queryClient={queryClient}>
-        <DbSyncSetup />
+      <AppProviders
+        queryClient={queryClient}
+        isPublicPath={true}
+        sessionBypass={true}
+        disableWebMcp={true}
+      >
         <AppLayout>
           <Outlet />
         </AppLayout>
