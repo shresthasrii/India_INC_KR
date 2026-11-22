@@ -49,7 +49,7 @@ export default function HomeRoute() {
   return (
     <div className="kerala-site">
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Kerala, home"><span className="brand-mark">✳</span><span>kerala<span className="brand-period">.</span><small>THE LAND OF STORIES</small></span></a>
+        <a className="brand" href="#top" aria-label="Kerala, home"><span className="brand-mark"><img src="/logo.png" alt="Government of Kerala Emblem" className="brand-logo-img" /></span><span>kerala<span className="brand-period">.</span><small>THE LAND OF STORIES</small></span></a>
         <nav className={menuOpen ? "main-nav is-open" : "main-nav"} aria-label="Main navigation">
           <a href="#land" onClick={() => setMenuOpen(false)}>The land</a><a href="#history" onClick={() => setMenuOpen(false)}>History</a><a href="#culture" onClick={() => setMenuOpen(false)}>Culture</a><a href="#heritage" onClick={() => setMenuOpen(false)}>Heritage</a>
         </nav>
@@ -69,7 +69,7 @@ export default function HomeRoute() {
         </section>
 
         <section className="intro section-wrap" id="introduction">
-          <div className="intro-label"><span className="little-star">✳</span><span>WELCOME TO KERALA<br /><small>INDIA’S SOUTHWEST COAST</small></span></div>
+          <div className="intro-label"><img src="/logo.png" alt="Government of Kerala Emblem" className="intro-logo-img" /><span>WELCOME TO KERALA<br /><small>INDIA’S SOUTHWEST COAST</small></span></div>
           <div className="intro-copy"><p className="section-kicker">A PLACE LIKE NO OTHER</p><h2>There is a little more<br />to <em>every story.</em></h2><p>Come for the landscapes. Stay for the stories. Kerala is a place where nature, history and tradition flow together, creating a way of life unlike anywhere else.</p><a href="#land" className="text-link">GET TO KNOW KERALA <IconArrowRight size={17}/></a></div>
           <div className="intro-aside"><span>“</span><p>Not just a place on the map, but a feeling that stays with you.</p><small>— THE KERALA STORY</small></div>
         </section>
@@ -95,10 +95,10 @@ export default function HomeRoute() {
             <p className="heritage-closing">Across communities and generations, these traditions are made and remade every day. Kerala’s story is still being written.</p>
             <a href="#top" className="heritage-link">BACK TO THE BEGINNING <IconArrowUpRight size={17}/></a>
           </div>
-          <div className="heritage-motif" aria-hidden="true">✳</div>
+          <div className="heritage-motif" aria-hidden="true"><img src="/logo.png" alt="" className="heritage-motif-img" /></div>
         </section>
       </main>
-      <footer className="site-footer"><a className="brand footer-brand" href="#top"><span className="brand-mark">✳</span><span>kerala<span className="brand-period">.</span><small>THE LAND OF STORIES</small></span></a><p>Made for the curious, inspired by Kerala.</p><span>UNTIL WE MEET AGAIN &nbsp; ↗</span></footer>
+      <footer className="site-footer"><a className="brand footer-brand" href="#top"><span className="brand-mark"><img src="/logo.png" alt="Government of Kerala Emblem" className="brand-logo-img" /></span><span>kerala<span className="brand-period">.</span><small>THE LAND OF STORIES</small></span></a><p>Made for the curious, inspired by Kerala.</p><span>UNTIL WE MEET AGAIN &nbsp; ↗</span></footer>
     </div>
   );
 }
